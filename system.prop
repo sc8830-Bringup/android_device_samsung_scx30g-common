@@ -49,22 +49,22 @@ config.disable_atlas=true
 config.displayinfo.use_cache=true
 
 # RIL
-ro.com.android.dataroaming=false
-ro.msms.phone_count=2
-persist.msms.phone_count=2
-persist.msms.phone_default=0
-persist.msmslt=0
-ro.modem.w.count=2
-persist.sys.modem.diag=,gser
-sys.usb.gser.count=4
+#ro.com.android.dataroaming=false
+#ro.msms.phone_count=2
+#persist.msms.phone_count=2
+#persist.msms.phone_default=0
+#persist.msmslt=0
+#ro.modem.w.count=2
+#persist.sys.modem.diag=,gser
+#sys.usb.gser.count=4
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
-ro.telephony.ril_class=SC7730SRIL
-ro.telephony.ril.config=setPrefNwTypeOnUnsolConnected,sim2gsmonly
-ro.telephony.ril.socket_name=rild,rild1,rild2
-ro.ril.telephony.mqanelements=6
-persist.sys.sprd.modemreset=0
-persist.sys.sprd.wcnreset=1
+#ro.telephony.ril_class=SC7730SRIL
+#ro.telephony.ril.config=setPrefNwTypeOnUnsolConnected,sim2gsmonly
+#ro.telephony.ril.socket_name=rild,rild1,rild2
+#ro.ril.telephony.mqanelements=6
+#persist.sys.sprd.modemreset=0
+#persist.sys.sprd.wcnreset=1
 
 # Multitasking
 ro.config.swappiness=130
@@ -77,3 +77,8 @@ fw.show_multiuserui=1
 
 # EGL blobs crash on screen off
 ro.egl.destroy_after_detach=true
+
+# Fixes screen orientation on SM-T113NU
+ro.sf.hwrotation=270
+
+ro.config.low_ram=true
