@@ -80,5 +80,3 @@ ro.egl.destroy_after_detach=true
 
 # Fixes screen orientation on SM-T113NU
 ro.sf.hwrotation=270
-
-ro.config.low_ram=true
